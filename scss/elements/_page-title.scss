@@ -1,0 +1,50 @@
+.page-title-section {
+    position: relative;
+    height: 530px;
+    display: flex;
+    align-items: center;
+    z-index: 9;
+    flex-direction: column;
+    justify-content: center;
+    @include media-breakpoint-only(xl) {
+        height: 400px;
+    }
+    @include media-breakpoint-only(lg) {
+        height: 400px;
+    }
+    @include media-breakpoint-only(md) {
+        height: 400px;
+    }
+    @include media-breakpoint-down(md) {
+        height: 350px;
+    }
+}
+
+.page-title {
+    .title {
+        font-size: 28px;
+        line-height: 1.2;
+        color: $white;
+        margin: 0;
+        text-align: center;
+    }
+
+    @include media-breakpoint-only(lg) {
+        .title {
+            font-size: 42px;
+        }
+    }
+
+    @include media-breakpoint-only(md) {
+        .title {
+            font-size: 34px;
+        }
+    }
+
+    @include media-breakpoint-only(md) {
+        .title {
+            font-size: 23px;
+            line-height: 1.5;
+        }
+    }
+}

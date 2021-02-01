@@ -1,0 +1,107 @@
+// Variable overrides
+$body-bg: #000;
+$body-color: #748494;
+$body-bg: white;
+$headings-color: #030f27;
+$primary: #1292ee;
+$secondary: #748494;
+$secondary-light: #8c89a2;
+$success: #67d68a;
+$danger: #f44336;
+$warning: #ffc107;
+$info: #17a2b8;
+$light: #f8f9fa;
+$off-white: #f6f2ed;
+$white-gray: #f2f2f2;
+$white-light: #cacaca;
+$white-opacity-50: rgba(255, 255, 255, 0.5);
+$white: #fff;
+$overlay-black: #030f27;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    // "info": $info,
+    // "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $overlay-black,
+    "white": $white,
+);
+
+// Color system
+
+$white: #fff;
+$gray-100: #748494;
+$gray-200: #3f5054;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #cacaca;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+// fusv-disable
+$grays: (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900,
+);
+
+$enable-negative-margins: true;
+$enable-rounded: false;
+
+// Custom BootStrap selection
+
+// Configuration
+@import "vendor/bootstrap/functions";
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+// Customize your utilities here
+@import "bootstrap-utilities";
+
+// Layout & components (some are disabled)
+@import "vendor/bootstrap/root";
+@import "vendor/bootstrap/reboot";
+@import "vendor/bootstrap/type";
+@import "vendor/bootstrap/images";
+@import "vendor/bootstrap/containers";
+@import "vendor/bootstrap/grid";
+@import "vendor/bootstrap/tables";
+@import "vendor/bootstrap/forms";
+@import "vendor/bootstrap/buttons";
+@import "vendor/bootstrap/transitions";
+@import "vendor/bootstrap/dropdown";
+@import "vendor/bootstrap/button-group";
+@import "vendor/bootstrap/nav";
+@import "vendor/bootstrap/navbar";
+@import "vendor/bootstrap/card";
+// @import "vendor/bootstrap/accordion";
+@import "vendor/bootstrap/breadcrumb";
+@import "vendor/bootstrap/pagination";
+@import "vendor/bootstrap/badge";
+@import "vendor/bootstrap/alert";
+// @import "vendor/bootstrap/progress";
+@import "vendor/bootstrap/list-group";
+@import "vendor/bootstrap/close";
+@import "vendor/bootstrap/toasts";
+// @import "vendor/bootstrap/modal";
+// @import "vendor/bootstrap/tooltip";
+// @import "vendor/bootstrap/popover";
+// @import "vendor/bootstrap/carousel";
+// @import "vendor/bootstrap/spinners";
+
+// Helpers
+@import "vendor/bootstrap/helpers";
+
+// Utilities
+@import "vendor/bootstrap/utilities/api";

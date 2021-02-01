@@ -1,0 +1,57 @@
+.newsletter-section {
+    position: relative;
+
+    .shape {
+        position: absolute;
+        z-index: -1;
+
+        &-1 {
+            top: -50px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+.newsletter-form {
+    max-width: 570px;
+    margin: 0 auto;
+    margin-top: 50px;
+    @include media-breakpoint-only(md) {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    &.form-border {
+        form {
+            input {
+                border-color: $primary;
+            }
+        }
+    }
+    form {
+        display: flex;
+        @include media-breakpoint-only(md) {
+            flex-wrap: wrap;
+        }
+        input {
+            border-width: 1px 0 1px 1px;
+            border-radius: 5px 0 0 5px;
+            min-height: 52px;
+            padding: 3px 20px;
+            @include media-breakpoint-only(md) {
+                border-width: 1px;
+                border-radius: 5px;
+                margin-bottom: 15px;
+            }
+        }
+        button {
+            border-radius: 0 5px 5px 0;
+            width: 160px;
+            @include media-breakpoint-only(md) {
+                border-radius: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.footer-section {
+    padding: 100px 0 0px;
+    background: $overlay-black;
+    overflow: hidden;
+    @include media-breakpoint-only(md) {
+        padding: 80px 0 0px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 60px 0 0px;
+    }
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    padding: 20px 15px;
+    border-top: 1px solid $gray-200;
+    color: $white;
+    margin-bottom: 0;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+
+    img {
+        max-height: 52px;
+        width: auto;
+    }
+}
+
+.footer-widget-title {
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 17px;
+}
+
+.footer-widget-content {
+    font-size: 18px;
+    font-weight: 500;
+    color: $gray-100;
+
+    p {
+        margin-bottom: 5px;
+        color: $gray-100;
+        font-family: $link-font;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        margin-right: -20px;
+        margin-bottom: -5px;
+        padding-left: 0;
+
+        list-style: none;
+
+        li {
+            margin-bottom: 5px;
+            padding-right: 20px;
+            a {
+                font-size: 16px;
+                line-height: 30px;
+                @include media-breakpoint-only(lg) {
+                    font-size: 15px;
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.footer-badge {
+    background-color: $primary;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 4px 8px 3px;
+    color: $white;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 0 7px;
+}
+
+.footer-social-inline {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $spacer * 2;
+
+    & a {
+        margin-right: $spacer;
+        margin-bottom: $spacer;
+
+        color: $gray-100;
+
+        & i {
+            font-size: 24px;
+            line-height: 1;
+
+            display: block;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

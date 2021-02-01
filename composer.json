@@ -1,0 +1,21 @@
+{
+    "name": "lekoala/exo-theme",
+    "type": "silverstripe-theme",
+    "description": "Exo theme for SilverStripe",
+    "keywords": [
+        "silverstripe",
+        "theme"
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": "^4"
+    },
+    "extra": {
+        "expose": [
+            "css",
+            "images",
+            "javascript",
+            "fonts"
+        ]
+    }
+}
