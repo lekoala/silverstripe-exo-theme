@@ -23,7 +23,7 @@
 
                     <div class="header-search-area mx-2">
                         <div class="header-search">
-                            <a href="javascript:void(0)" class="header-search-toggle"><i class="bi-search"></i></a>
+                            <a href="javascript:void(0)" class="header-search-toggle"><bs-i name="search"></bs-i></a>
                         </div>
                     </div>
 

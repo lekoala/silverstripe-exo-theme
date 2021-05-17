@@ -1,0 +1,26 @@
+bs-i {
+  --size: 1em;
+  display: inline-flex;
+  width: var(--size);
+  height: var(--size);
+  vertical-align: middle;
+}
+bs-i svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+// Fix alignment
+
+li,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  vertical-align: -0.125em;
+}

@@ -1,17 +1,17 @@
 .header-logo {
-    a {
-        position: relative;
+  a {
+    position: relative;
 
-        img {
-            max-height: 52px;
-        }
+    img {
+      max-height: 52px;
     }
+  }
 
-    @include media-breakpoint-down(sm) {
-        img {
-            max-width: 120px;
-            max-height: none;
-            height: auto;
-        }
+  @include media-breakpoint-down(sm) {
+    img {
+      max-width: 120px;
+      max-height: none;
+      height: auto;
     }
+  }
 }

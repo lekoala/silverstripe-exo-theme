@@ -1,3 +1,5 @@
+$breadcrumb-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='#ffffff' d='M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z'></path></svg>") !default;
+
 .breadcrumb {
     padding: 40px 0;
     background-color: transparent;
@@ -15,11 +17,13 @@
         & + li {
             &::before {
                 margin: 0 15px;
-                font-size: 16px;
-                content: unicode("f285");
-                font-family: $customIconFont;
-                color: $white;
                 margin-top: 2px;
+                content: "";
+                background-image: escape-svg($breadcrumb-icon-bg);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 1em;
+                display: inline-block;
             }
         }
 

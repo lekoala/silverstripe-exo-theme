@@ -28,7 +28,7 @@
             </div>
         <% end_loop %>
         </div>
-        <div class="home-slider-prev swiper-button-prev main-slider-nav"><i class="bi-chevron-left"></i></div>
-        <div class="home-slider-next swiper-button-next main-slider-nav"><i class="bi-chevron-right"></i></div>
+        <div class="home-slider-prev swiper-button-prev main-slider-nav"><bs-i name="chevron-left"></vs-i></div>
+        <div class="home-slider-next swiper-button-next main-slider-nav"><bs-i name="chevron-right"></bs-i></div>
     </div>
 </div>

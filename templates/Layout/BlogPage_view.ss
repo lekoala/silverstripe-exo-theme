@@ -17,14 +17,14 @@
                                 $Content.RAW
                             </div>
                             <ul class="meta mb-0 mt-4">
-                                <li><i class="bi-pencil"></i>Written by $Author.Title, $PublishedDate.Nice</li>
-                                <li><i class="bi-tags"></i>$TagsList</li>
-                                <li><i class="bi-chat-left"></i>$CommentsCount Comments</li>
-                                <li class="media"><a href="#"><i class="bi-share-alt"></i>Share this post</a>
+                                <li><bs-i name="pencil"></bs-i>Written by $Author.Title, $PublishedDate.Nice</li>
+                                <li><bs-i name="tags"></bs-i>$TagsList</li>
+                                <li><bs-i name="chat-left"></bs-i>$CommentsCount Comments</li>
+                                <li class="media"><a href="#"><bs-i name="share-alt"></bs-i>Share this post</a>
                                     <div class="list">
-                                    <a href="$ShareTwitterLink" target="_blank"><i class="bi-twitter"></i></a>
-                                    <a href="$ShareFacebookLink" target="_blank"><i class="bi-facebook"></i></a>
-                                    <a href="$ShareInstagramLink" target="_blank"><i class="bi-instagram"></i></a>
+                                    <a href="$ShareTwitterLink" target="_blank"><bs-i name="twitter"></bs-i></a>
+                                    <a href="$ShareFacebookLink" target="_blank"><bs-i name="facebook"></bs-i></a>
+                                    <a href="$ShareInstagramLink" target="_blank"><bs-i name="instagram"></bs-i></a>
                                     </div>
                                 </li>
                             </ul>

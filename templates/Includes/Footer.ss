@@ -14,9 +14,9 @@
                             <p><a href="mail:$SiteConfig.ContactEmail">$SiteConfig.ContactEmail</a> </p>
                         </div>
                         <div class="footer-social-inline">
-                            <a href="$SiteConfig.TwitterLink" target="_blank"><i class="bi-twitter"></i></a>
-                            <a href="$SiteConfig.FacebookLink" target="_blank"><i class="bi-facebook"></i></a>
-                            <a href="$SiteConfig.InstagramLink" target="_blank"><i class="bi-instagram"></i></a>
+                            <a href="$SiteConfig.TwitterLink" target="_blank"><bs-i name="twitter"></bs-i></a>
+                            <a href="$SiteConfig.FacebookLink" target="_blank"><bs-i name="facebook"></bs-i></a>
+                            <a href="$SiteConfig.InstagramLink" target="_blank"><bs-i name="instagram"></bs-i></a>
                         </div>
                     </div>
                 </div>
@@ -46,6 +46,6 @@
 </div>
 
 <a href="#" class="scroll-top" id="scroll-top">
-    <i class="arrow-top bi-arrow-up"></i>
-    <i class="arrow-bottom bi-arrow-up"></i>
+    <bs-i name="arrow-up" class="arrow-top"></bs-i>
+    <bs-i name="arrow-up" class="arrow-bottom"></bs-i>
 </a>

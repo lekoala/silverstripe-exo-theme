@@ -7,8 +7,8 @@ This theme can be used to test your projects with a (more) realistic front end.
 
 ## Main features
 
-- Bootstrap 5 beta 1
-- Bootstrap icons 1.3
+- Bootstrap 5.0.1
+- Bootstrap icons 1.5 as a custom element
 - Google fonts
 - No jQuery!
 - Lazy loaded images

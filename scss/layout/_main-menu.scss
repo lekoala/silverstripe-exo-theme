@@ -1,153 +1,157 @@
+$menu-dropdown-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>") !default;
+
 .main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
 
-    > ul {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        padding-left: 0;
-        list-style: none;
+    > li {
+      position: relative;
 
-        > li {
-            position: relative;
+      > a {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.375;
+        display: block;
+        padding: 40px 15px;
+        color: $white;
 
-            > a {
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.375;
-                display: block;
-                padding: 40px 15px;
-                color: $white;
-
-                .menu-text {
-                    display: flex;
-                    align-items: center;
-                }
-            }
-
-            .menu-toggle {
-                display: none;
-            }
-
-            &.has-children {
-                > a {
-                    .menu-text {
-                        &::after {
-                            font-family: $customIconFont;
-                            font-size: 8px;
-                            font-weight: 900;
-                            margin-left: 10px;
-                            content: unicode("f282");
-                        }
-                    }
-                }
-            }
-
-            &:hover {
-                & > a {
-                    color: $primary;
-                }
-
-                > .sub-menu {
-                    visibility: visible;
-
-                    margin-top: 10px;
-
-                    opacity: 1;
-                }
-            }
+        .menu-text {
+          display: flex;
+          align-items: center;
         }
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      &.has-children {
+        > a {
+          .menu-text {
+            &::after {
+              content: "";
+              background-image: escape-svg($menu-dropdown-indicator);
+              background-repeat: no-repeat;
+              width: 1em;
+              height: 1em;
+              display: inline-block;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        & > a {
+          color: $primary;
+        }
+
+        > .sub-menu {
+          visibility: visible;
+          margin-top: 10px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .sub-menu {
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    width: 240px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 18px 0;
+    list-style: none;
+    transition: all 0.4s ease 0.2s;
+    opacity: 0;
+    border-radius: 10px;
+    background-color: $white;
+    box-shadow: 0 2px 29px rgba($black, 0.05);
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 40px;
+      text-align: center;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 7.5px 10px 7.5px;
+      border-color: transparent transparent $white transparent;
+    }
+    li {
+      position: relative;
+
+      a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.375;
+        display: block;
+        padding: 8px 30px;
+        white-space: nowrap;
+        color: $body-color;
+
+        .menu-text {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      &.has-children {
+        > a {
+          .menu-text {
+            &::after {
+              content: "";
+              background-image: escape-svg($menu-dropdown-indicator);
+              background-repeat: no-repeat;
+              width: 1em;
+              height: 1em;
+              display: inline-block;
+              margin-left: auto;
+            }
+          }
+        }
+      }
+
+      &:hover,
+      &.active {
+        & > a {
+          color: #111111;
+        }
+      }
+
+      &:hover {
+        > .sub-menu {
+          visibility: visible;
+          margin-top: 0px;
+          opacity: 1;
+        }
+      }
     }
 
     .sub-menu {
-        position: absolute;
-        z-index: 9999;
-        top: 100%;
-        left: 0;
-        visibility: hidden;
-        width: 240px;
-        margin-top: 20px;
-        margin-bottom: 0;
-        padding: 18px 0;
-        list-style: none;
-        transition: all 0.4s ease 0.2s;
-        opacity: 0;
-        border-radius: 10px;
-        background-color: $white;
-        box-shadow: 0 2px 29px rgba($black, 0.05);
-        &::before {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: 40px;
-            text-align: center;
-            margin: 0 auto;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 7.5px 10px 7.5px;
-            border-color: transparent transparent $white transparent;
-        }
-        li {
-            position: relative;
-
-            a {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 1.375;
-                display: block;
-                padding: 8px 30px;
-                white-space: nowrap;
-                color: $body-color;
-
-                .menu-text {
-                    display: flex;
-                    align-items: center;
-                }
-            }
-
-            .menu-toggle {
-                display: none;
-            }
-
-            &.has-children {
-                > a {
-                    .menu-text {
-                        &::after {
-                            font-family: $customIconFont;
-                            font-size: 8px;
-                            font-weight: 900;
-                            margin-left: auto;
-                            content: unicode("f282");
-                        }
-                    }
-                }
-            }
-
-            &:hover,
-            &.active {
-                & > a {
-                    color: #111111;
-                }
-            }
-
-            &:hover {
-                > .sub-menu {
-                    visibility: visible;
-                    margin-top: 0px;
-                    opacity: 1;
-                }
-            }
-        }
-
-        .sub-menu {
-            top: -18px;
-            left: 100%;
-            &::before {
-                display: none;
-            }
-        }
+      top: -18px;
+      left: 100%;
+      &::before {
+        display: none;
+      }
     }
+  }
 }

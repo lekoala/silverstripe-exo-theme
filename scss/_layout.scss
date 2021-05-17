@@ -1,133 +1,133 @@
 .header-section {
+  z-index: 9999;
+  min-height: 80px;
+  border-bottom: 1px solid $white-opacity-50;
+
+  @include media-breakpoint-up(md) {
+    min-height: 100px;
+  }
+
+  .header-inner {
     z-index: 9999;
+    display: flex;
+    align-items: center;
     min-height: 80px;
-    border-bottom: 1px solid $white-opacity-50;
+    background-color: $white;
 
     @include media-breakpoint-up(md) {
-        min-height: 100px;
+      min-height: 100px;
     }
+  }
+
+  &.is-sticky {
+    .header-inner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #030e22 !important;
+      width: 100%;
+      height: 80px;
+      animation: headerSlideDown 0.95s ease forwards;
+
+      box-shadow: 0 8px 20px 0 rgba($black, 0.1);
+    }
+  }
+
+  &.header-shadow {
+    .header-inner {
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  &.header-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
 
     .header-inner {
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        min-height: 80px;
-        background-color: $white;
-
-        @include media-breakpoint-up(md) {
-            min-height: 100px;
-        }
+      background-color: transparent;
     }
-
-    &.is-sticky {
-        .header-inner {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #030e22 !important;
-            width: 100%;
-            height: 80px;
-            animation: headerSlideDown 0.95s ease forwards;
-
-            box-shadow: 0 8px 20px 0 rgba($black, 0.1);
-        }
-    }
-
-    &.header-shadow {
-        .header-inner {
-            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
-        }
-    }
-
-    &.header-transparent {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-
-        .header-inner {
-            background-color: transparent;
-        }
-    }
+  }
 }
 
 @keyframes headerSlideDown {
-    0% {
-        transform: translateY(-100%);
-    }
+  0% {
+    transform: translateY(-100%);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @import "layout/logo";
 
 .header-search-area {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header-search {
+  a {
+    line-height: 1;
+    display: flex;
+    padding: 6px 5px;
+    color: $white;
+
+    bs-i {
+      font-size: 18px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 26px;
+      }
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
     a {
-        line-height: 1;
-        display: flex;
-        padding: 6px 5px;
-        color: $white;
-
-        i {
-            font-size: 18px;
-
-            @include media-breakpoint-up(md) {
-                font-size: 26px;
-            }
-        }
-
-        &:hover {
-            color: $primary;
-        }
+      padding-right: 7px;
+      padding-left: 7px;
     }
-
-    @include media-breakpoint-down(sm) {
-        a {
-            padding-right: 7px;
-            padding-left: 7px;
-        }
-    }
+  }
 }
 
 .header-menu {
-    &.is-mobile {
-        display: block !important;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: $light;
-        border-bottom: 2px solid $primary;
+  &.is-mobile {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $light;
+    border-bottom: 2px solid $primary;
 
-        .main-menu {
-            justify-content: flex-start;
-            padding: $spacer 0;
-            margin-left: $spacer;
-        }
-
-        li {
-            display: block;
-            width: 100%;
-
-            a {
-                display: inline-block;
-                padding: $spacer $spacer;
-                color: $primary;
-
-                &:hover {
-                    color: $secondary;
-                }
-            }
-        }
+    .main-menu {
+      justify-content: flex-start;
+      padding: $spacer 0;
+      margin-left: $spacer;
     }
+
+    li {
+      display: block;
+      width: 100%;
+
+      a {
+        display: inline-block;
+        padding: $spacer $spacer;
+        color: $primary;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
 }
 
 @import "layout/search";

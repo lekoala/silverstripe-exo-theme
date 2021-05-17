@@ -1,134 +1,132 @@
 .about-image-area {
-    position: relative;
-    z-index: 9;
-    height: 100%;
-    margin-right: 45px;
-    &.right-0 {
-        .about-image {
-            right: 0;
-        }
-    }
+  position: relative;
+  z-index: 9;
+  height: 100%;
+  margin-right: 45px;
+  &.right-0 {
     .about-image {
-        position: relative;
-        top: 0;
-        right: 45px;
-        max-width: 55%;
-        float: right;
-        z-index: 9;
-        &.right-n50 {
-            right: -50px !important;
-            @include media-breakpoint-down(xxl) {
-                right: 0 !important;
-            }
-        }
-        @include media-breakpoint-down(xl) {
-            right: 0;
-        }
-        @include media-breakpoint-down(sm) {
-            width: 250px;
-        }
-        &:nth-child(2) {
-            position: absolute;
-            top: 70px;
-            left: 0;
-            z-index: 8;
-            float: left;
-            text-align: left;
-        }
-        img {
-            border-radius: 5px;
-            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05),
-                0 1.5rem 2.2rem rgba(0, 0, 0, 0.1);
-            transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
-        }
-        &:hover {
-            img {
-                box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.1),
-                    0 2rem 3rem rgba(0, 0, 0, 0.15);
-            }
-        }
+      right: 0;
     }
-
-    .shape {
-        position: absolute;
-        z-index: -1;
-
-        // image is displayed behind the two pictures
-        &-1 {
-            right: 75px;
-            top: 100px;
-            z-index: -1;
-        }
+  }
+  .about-image {
+    position: relative;
+    top: 0;
+    right: 45px;
+    max-width: 55%;
+    float: right;
+    z-index: 9;
+    &.right-n50 {
+      right: -50px !important;
+      @include media-breakpoint-down(xxl) {
+        right: 0 !important;
+      }
     }
+    @include media-breakpoint-down(xl) {
+      right: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 250px;
+    }
+    &:nth-child(2) {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      z-index: 8;
+      float: left;
+      text-align: left;
+    }
+    img {
+      border-radius: 5px;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05), 0 1.5rem 2.2rem rgba(0, 0, 0, 0.1);
+      transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+    }
+    &:hover {
+      img {
+        box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.1), 0 2rem 3rem rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  .shape {
+    position: absolute;
+    z-index: -1;
+
+    // image is displayed behind the two pictures
+    &-1 {
+      right: 75px;
+      top: 100px;
+      z-index: -1;
+    }
+  }
 }
 
 .about-content-area {
-    p {
-        max-width: 420px;
-        margin-bottom: 0;
-        @include media-breakpoint-down(md) {
-            max-width: 100%;
-        }
-    }
+  p {
+    max-width: 420px;
+    margin-bottom: 0;
     @include media-breakpoint-down(md) {
-        margin-top: 150px;
+      max-width: 100%;
     }
+  }
+  @include media-breakpoint-down(md) {
+    margin-top: 150px;
+  }
 }
 
 .about-funfact {
-    .number {
-        font-size: 41px;
-        line-height: 1;
-        color: $primary;
-        margin-bottom: 15px;
-    }
-    .text {
-        font-size: 20px;
-        line-height: 1.5;
-        margin-bottom: 15px;
-    }
+  .number {
+    font-size: 41px;
+    line-height: 1;
+    color: $primary;
+    margin-bottom: 15px;
+  }
+  .text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
 }
 
 .about-shape-animation {
-    position: relative;
+  position: relative;
 
+  .shape {
+    position: absolute;
+    z-index: 1;
+
+    &-1 {
+      top: auto;
+      bottom: 0px;
+      right: -35px;
+      z-index: -1;
+    }
+  }
+  @include media-breakpoint-down(xxl) {
     .shape {
-        position: absolute;
-        z-index: 1;
-
-        &-1 {
-            top: auto;
-            bottom: 0px;
-            right: -35px;
-            z-index: -1;
-        }
+      &-1 {
+        bottom: -60px;
+        right: 0px;
+        z-index: -1;
+      }
     }
-    @include media-breakpoint-down(xxl) {
-        .shape {
-            &-1 {
-                bottom: -60px;
-                right: 0px;
-                z-index: -1;
-            }
-        }
-    }
+  }
 }
 
 .about-content-full {
-    .title {
-        font-size: 42px;
-        font-weight: 600;
-        margin-bottom: 25px;
-        @include media-breakpoint-down(lg) {
-            font-size: 26px;
-            line-height: 32px;
-        }
-        @include media-breakpoint-down(md) {
-            font-size: 24px;
-            line-height: 30px;
-        }
+  .title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    @include media-breakpoint-down(lg) {
+      font-size: 26px;
+      line-height: 32px;
     }
-    p {
-        margin-bottom: 20px;
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      line-height: 30px;
     }
+  }
+  p {
+    margin-bottom: 20px;
+  }
 }

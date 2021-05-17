@@ -4,7 +4,7 @@
     <div class="col">
         <ul class="pagination center">
             <% if $Results.NotFirstPage %>
-            <li><a href="$Results.PrevLink" class="prev"><i class="bi-chevron-left"></i></a></li>
+            <li><a href="$Results.PrevLink" class="prev"><bs-i name="chevron-left"></bs-i></a></li>
             <% end_if %>
             <% loop $Results.Pages %>
             <li>
@@ -16,7 +16,7 @@
             </li>
             <% end_loop %>
             <% if $Results.NotLastPage %>
-            <li><a href="$Results.NextLink" class="prev"><i class="bi-chevron-right"></i></a></li>
+            <li><a href="$Results.NextLink" class="prev"><bs-i name="chevron-right"></bs-i></a></li>
             <% end_if %>
         </ul>
     </div>

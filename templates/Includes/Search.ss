@@ -1,13 +1,13 @@
 <div class="main-search">
     <div class="main-search-icon">
-        <button class="search-close"><i class="bi-x"></i></button>
+        <button class="search-close"><bs-i name="x"></bs-i></button>
     </div>
     <div class="main-search-input">
         <form action="/search">
             <div class="form-search">
                 <input id="search" name="q" class="input-text" value="" placeholder="" type="search">
                 <button>
-                    <i class="bi-search"></i>
+                    <bs-i name="search"></bs-i>
                 </button>
             </div>
         </form>

@@ -13,8 +13,8 @@
                     </div>
                     <div class="info">
                         <ul class="meta">
-                            <li><i class="bi-calendar"></i>$PublishedDate.Nice</li>
-                            <li><i class="bi-eye"></i>$ViewCount views</li>
+                            <li><bs-i name="calendar"></bs-i>$PublishedDate.Nice</li>
+                            <li><bs-i name="eye"></bs-i>$ViewCount views</li>
                         </ul>
                         <h3 class="title"><a href="$Link">$Title</a></h3>
                         <a href="$Link" class="btn-link "> Read More</a>

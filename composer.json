@@ -14,8 +14,7 @@
         "expose": [
             "css",
             "images",
-            "javascript",
-            "fonts"
+            "javascript"
         ]
     }
 }

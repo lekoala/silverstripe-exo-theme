@@ -21,7 +21,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap" rel="stylesheet">
 
-    <% require themedCSS("vendor/bootstrap-icons.css") %>
     <% require themedCSS("plugins/aos.min.css") %>
 
     <% require themedCSS("style.min.css") %>
@@ -42,6 +41,7 @@
     <% require themedJavascript("main.js") %>
 
     <script type="module">
+    import BootstrapIcon from '{$ThemeDir}/javascript/bootstrap-icon-element.js'
     import LineaIcon from '{$ThemeDir}/javascript/linea-icon-element.js'
     </script>
 </head>

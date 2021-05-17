@@ -13,9 +13,9 @@
                         </div>
                         <div class="info">
                             <ul class="meta">
-                                <li><i class="bi-pencil"></i>Written by $Author.Title, $PublishedDate.Nice</li>
-                                <li><i class="bi-tags"></i>$TagsList</li>
-                                <li><i class="bi-chat-left"></i>$CommentsCount Comments</li>
+                                <li><bs-i name="pencil"></bs-i>Written by $Author.Title, $PublishedDate.Nice</li>
+                                <li><bs-i name="tags"></bs-i>$TagsList</li>
+                                <li><bs-i name="chat-left"></bs-i>$CommentsCount Comments</li>
                             </ul>
                             <h3 class="title"><a href="$Link">$Title</a></h3>
                             <div class="desc">
