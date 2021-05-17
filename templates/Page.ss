@@ -29,6 +29,7 @@
     <% if EnableBootstrapJs %>
     <% require themedJavascript("vendor/bootstrap/bootstrap.bundle.min.js") %>
     <% end_if %>
+
     <% require themedJavascript("plugins/lazyload.min.js") %>
     <% require themedJavascript("plugins/aos.min.js") %>
 
@@ -39,6 +40,10 @@
 
     <% require themedJavascript("plugins/parallax.min.js") %>
     <% require themedJavascript("main.js") %>
+
+    <script type="module">
+    import LineaIcon from '.{$ThemeDir}/javascript/linea-icon-element.js'
+    </script>
 </head>
 
 <body>

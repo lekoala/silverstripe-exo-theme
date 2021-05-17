@@ -13,7 +13,7 @@ This theme can be used to test your projects with a (more) realistic front end.
 - No jQuery!
 - Lazy loaded images
 - Swiper, AOS, Parallax
-- Linea icon set
+- Linea icon set as a custom element
 
 ## Install the theme
 

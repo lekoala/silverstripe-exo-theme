@@ -13,7 +13,9 @@
             <div class="col mb-4" data-aos="fade-up">
 
                 <div class="icon-box text-center">
-                    <div class="icon"><img class="" src="$ThemeDir/images/svg/linea/linea-{$Icon}.svg" alt=""></div>
+                    <div class="icon">
+                        <linea-icon name="{$Icon}"></linea-icon>
+                    </div>
                     <div class="content">
                         <h3 class="title">$Title</h3>
                         <div class="desc">

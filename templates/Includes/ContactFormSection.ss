@@ -14,7 +14,7 @@
                     <% end_with %>
                     <div class="contact-info info-light">
                         <div class="icon inverted">
-                            <img class="" src="$ThemeDir/images/svg/linea/linea-basic-map.svg" alt="">
+                            <linea-icon name="basic-map"></linea-icon>
                         </div>
                         <div class="info">
                             <h4 class="title">Our Locations</h4>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="contact-info info-light">
                         <div class="icon inverted">
-                            <img class="" src="$ThemeDir/images/svg/linea/linea-basic-message-txt.svg" alt="">
+                            <linea-icon name="basic-message-txt"></linea-icon>
                         </div>
                         <div class="info">
                             <h4 class="title">Give Us A Call</h4>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="contact-info info-light">
                         <div class="icon inverted">
-                            <img class="" src="$ThemeDir/images/svg/linea/linea-basic-mail-open-text.svg" alt="">
+                            <linea-icon name="basic-mail-open-text"></linea-icon>
                         </div>
                         <div class="info">
                             <h4 class="title"> Send a mail</h4>
