@@ -42,7 +42,7 @@
     <% require themedJavascript("main.js") %>
 
     <script type="module">
-    import LineaIcon from '.{$ThemeDir}/javascript/linea-icon-element.js'
+    import LineaIcon from '{$ThemeDir}/javascript/linea-icon-element.js'
     </script>
 </head>
 

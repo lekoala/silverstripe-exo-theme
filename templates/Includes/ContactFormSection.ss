@@ -76,7 +76,7 @@
                     <!-- Animation Shape Start -->
                     <div class="shape shape-1 scene">
                         <span data-depth="1">
-                            <img src="^$ThemeDir/images/shape-animation/CIRCLE-SEGMENT-02.png" alt="">
+                            <img src="$ThemeDir/images/shape-animation/CIRCLE-SEGMENT-02.png" alt="">
                         </span>
                     </div>
                     <!-- Animation Shape End -->

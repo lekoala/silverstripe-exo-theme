@@ -7791,12 +7791,11 @@ textarea.form-control-lg {
   }
 }
 linea-icon {
-  --size: 64px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: var(--size);
-  height: var(--size);
+  width: 64px;
+  height: 64px;
   vertical-align: middle;
 }
 
